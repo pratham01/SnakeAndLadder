@@ -16,7 +16,7 @@ public class LadderTest {
         if(ladder.getStart()>ladder.getEnd())
             Assertions.fail("Start position can't be more than End");
 
-        if(ladder.getStart() == Ladder.INITIAL_POSITION)
+        if(ladder.getStart() == Board.INITIAL_POSITION)
             Assertions.fail("Ladder can't place at this position");
 
     }

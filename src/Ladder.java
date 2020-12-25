@@ -1,6 +1,5 @@
 public class Ladder {
 
-    public static final int INITIAL_POSITION = 1;
     private int start;
     private int end;
 

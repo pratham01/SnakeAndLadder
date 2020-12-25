@@ -1,5 +1,4 @@
 public class Snake {
-    public static final int FINAL_POSITION = 100;
 
     private int head;
     private int tail;

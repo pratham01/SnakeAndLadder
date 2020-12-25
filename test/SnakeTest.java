@@ -16,7 +16,7 @@ public class SnakeTest {
         if(snake.getHead()<snake.getTail())
             Assertions.fail("Tail position can't be more than head");
 
-        if(snake.getHead() == Snake.FINAL_POSITION)
+        if(snake.getHead() == Board.SIZE)
             Assertions.fail("Snake can't place at this position");
 
     }
