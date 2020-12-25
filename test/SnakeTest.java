@@ -5,7 +5,7 @@ public class SnakeTest {
 
     @Test
     public void validateLengthOfSnake(){
-        Snake snake = new Snake(10, 45);
+        Snake snake = new Snake(97, 45);
 
         if(snake.getTail()<=0 || snake.getHead()<= 0)
             Assertions.fail("Head or Tail can't be negative");
