@@ -1,7 +1,5 @@
 package com.deserve.snakeladder.board;
 
-import com.deserve.snakeladder.board.Board;
-import com.deserve.snakeladder.board.Ladder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
