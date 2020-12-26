@@ -1,3 +1,5 @@
+package com.deserve.snakeladder.board;
+
 import java.util.HashMap;
 import java.util.Map;
 

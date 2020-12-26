@@ -1,3 +1,7 @@
+package com.deserve.snakeladder.board;
+
+import com.deserve.snakeladder.board.Board;
+import com.deserve.snakeladder.board.Snake;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +13,7 @@ public class SnakeTest {
         Assertions.assertTrue(snake.isValid());
         
             if(snake.getHead() == Board.SIZE)
-                Assertions.fail("Snake can't place at this position");
+                Assertions.fail("com.deserve.snakeladder.board.Snake can't place at this position");
 
     }
 

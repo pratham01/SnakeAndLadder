@@ -1,3 +1,5 @@
+package com.deserve.snakeladder.board;
+
 public class Snake {
 
     private int head;

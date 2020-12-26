@@ -1,3 +1,7 @@
+package com.deserve.snakeladder.board;
+
+import com.deserve.snakeladder.board.Board;
+import com.deserve.snakeladder.board.Ladder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +14,7 @@ public class LadderTest {
         Assertions.assertTrue(ladder.isValid());
 
         if(ladder.getStart() == Board.INITIAL_POSITION)
-            Assertions.fail("Ladder can't place at this position");
+            Assertions.fail("com.deserve.snakeladder.board.Ladder can't place at this position");
 
     }
 }
