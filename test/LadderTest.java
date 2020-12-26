@@ -4,17 +4,10 @@ import org.junit.jupiter.api.Test;
 public class LadderTest {
 
     @Test
-    public void validateLengthOfSnake(){
+    public void validateLengthAndPositionOfLadder(){
         Ladder ladder = new Ladder(23, 45);
 
-        if(ladder.getStart()<=0 || ladder.getEnd()<= 0)
-            Assertions.fail("Start/End can't be negative");
-
-        if(ladder.getStart() == ladder.getEnd())
-            Assertions.fail("Start/End can't be equal");
-
-        if(ladder.getStart()>ladder.getEnd())
-            Assertions.fail("Start position can't be more than End");
+        Assertions.assertTrue(ladder.isValid());
 
         if(ladder.getStart() == Board.INITIAL_POSITION)
             Assertions.fail("Ladder can't place at this position");
