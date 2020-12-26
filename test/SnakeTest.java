@@ -4,20 +4,12 @@ import org.junit.jupiter.api.Test;
 public class SnakeTest {
 
     @Test
-    public void validateLengthOfSnake(){
-        Snake snake = new Snake(97, 45);
-
-        if(snake.getTail()<=0 || snake.getHead()<= 0)
-            Assertions.fail("Head or Tail can't be negative");
-
-        if(snake.getHead() == snake.getTail())
-             Assertions.fail("Head and Tail can't be equal");
-
-        if(snake.getHead()<snake.getTail())
-            Assertions.fail("Tail position can't be more than head");
-
-        if(snake.getHead() == Board.SIZE)
-            Assertions.fail("Snake can't place at this position");
+    public void validateLengthAndPositionOfSnake(){
+        Snake snake = new Snake(89, 45);
+        Assertions.assertTrue(snake.isValid());
+        
+            if(snake.getHead() == Board.SIZE)
+                Assertions.fail("Snake can't place at this position");
 
     }
 
