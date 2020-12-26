@@ -16,19 +16,10 @@ public class Snake {
     }
 
     public boolean isValid(){
-        if(tail<=0 || head<= 0) {
-            System.out.println("Head or Tail can't be negative");
-            return false;
-        }
-        if(head == tail) {
-            System.out.println("Head and Tail can't be equal");
-            return false;
-        }
+        if(tail<=0 || head<= 0) throw new IllegalArgumentException("Head or Tail can't be negative/zero");
+        if(head == tail) throw new IllegalArgumentException("Head and Tail can't be equal");
+        if(head<tail)throw new IllegalArgumentException("Tail position can't be more than head");
 
-        if(head<tail){
-            System.out.println("Tail position can't be more than head");
-            return false;
-        }
         return true;
     }
 }

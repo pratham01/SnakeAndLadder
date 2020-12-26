@@ -17,20 +17,10 @@ public class Ladder {
     }
 
     public boolean isValid(){
-        if(start<=0 || end<= 0){
-            System.out.println("Start/End can't be negative");
-            return false;
-        }
+        if(start<=0 || end<= 0) throw new IllegalArgumentException("Start/End can't be negative");
+        if(start == end) throw new IllegalArgumentException("Start/End can't be equal");
+        if(start>end) throw new IllegalArgumentException("Start position can't be more than End");
 
-        if(start == end){
-            System.out.println("Start/End can't be equal");
-            return false;
-        }
-
-        if(start>end){
-            System.out.println("Start position can't be more than End");
-            return false;
-        }
         return true;
     }
 }
