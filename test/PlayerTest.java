@@ -8,6 +8,8 @@ public class PlayerTest {
         Player player = new Player("ABC", "abc@gmail.com", "9999999999");
 
         Assertions.assertEquals(player.getName(), "ABC");
+        Assertions.assertNotNull(player.getContactNo());
+        Assertions.assertNotNull(player.getEmail());
 
     }
 }

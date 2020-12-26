@@ -1,10 +1,9 @@
-public class Player implements RollDice{
+public class Player{
     private  String name;
     private String email;
     private String  contactNo;
 
-    private final static int MAX =6;
-    private final static int MIN =1;
+
 
     public Player(String name, String email, String contactNo) {
         this.name = name;
@@ -24,8 +23,5 @@ public class Player implements RollDice{
         return contactNo;
     }
 
-    @Override
-    public int getDiceValue() {
-       return (int) (Math.random()* (MAX - MIN + 1) + MIN);
-    }
+
 }

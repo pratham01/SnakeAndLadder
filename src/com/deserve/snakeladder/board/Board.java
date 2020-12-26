@@ -22,7 +22,7 @@ public class Board {
             return false;
         }
         if(snake.isValid()) {
-            Cell cell = new Cell(snake.getHead(), -snake.getTail());
+            Cell cell = new Cell(snake.getHead(), snake.getTail());
             cellMap.put(snake.getHead(), cell);
             return true;
         }
@@ -54,7 +54,7 @@ public class Board {
         if(cellMap.containsKey(diceValue+playerPosition))
             return cellMap.get(diceValue+playerPosition).getValue();
         else
-            return playerPosition+1;
+            return playerPosition+diceValue;
     }
 
 }
